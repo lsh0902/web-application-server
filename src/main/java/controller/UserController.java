@@ -2,8 +2,8 @@ package controller;
 
 import model.User;
 import service.UserService;
-import util.HttpRequestPatrick;
-import util.HttpResponsePatrick;
+import webserver.domain.HttpRequestPatrick;
+import webserver.domain.HttpResponsePatrick;
 
 public class UserController {
 

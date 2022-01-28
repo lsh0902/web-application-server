@@ -1,6 +1,8 @@
 package util;
 
 import constant.HttpMethod;
+import webserver.domain.HttpCookie;
+import webserver.domain.HttpRequestPatrick;
 
 import java.io.BufferedReader;
 import java.io.IOException;

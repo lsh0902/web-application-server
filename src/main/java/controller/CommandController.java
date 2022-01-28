@@ -1,6 +1,6 @@
 package controller;
 
-import util.HttpRequestPatrick;
+import webserver.domain.HttpRequestPatrick;
 
 import java.util.HashMap;
 import java.util.Map;

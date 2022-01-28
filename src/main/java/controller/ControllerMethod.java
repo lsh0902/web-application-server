@@ -1,7 +1,7 @@
 package controller;
 
-import util.HttpRequestPatrick;
-import util.HttpResponsePatrick;
+import webserver.domain.HttpRequestPatrick;
+import webserver.domain.HttpResponsePatrick;
 
 @FunctionalInterface
 public interface ControllerMethod {

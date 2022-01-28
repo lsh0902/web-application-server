@@ -1,5 +1,8 @@
-package util;
+package webserver.domain;
 
+
+import session.HttpSession;
+import session.SessionDB;
 
 import java.io.DataOutputStream;
 import java.io.File;
@@ -45,5 +48,15 @@ public class HttpRequestPatrick {
 
     public String getHeaderValue(String k) {
         return header.get(k);
+    }
+
+
+    public HttpCookie getCookie() {
+        return new HttpCookie(header.get("Cookie"));
+    }
+
+
+    public HttpSession getSession() {
+        return SessionDB.getSession(getCookie().getCookies("JSESSIONID"));
     }
 }
